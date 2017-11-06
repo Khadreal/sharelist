@@ -1,5 +1,15 @@
 <?php
 
+
+$url = parse_url(getenv("heroku_67a11c02f051029"));
+
+$host = "us-cdbr-iron-east-05.cleardb.net";
+$username = "b62e010ffd4137";
+$password = "8f166cf4";
+$database = "heroku_67a11c02f051029";
+
+
+
 return [
 
     /*
@@ -41,11 +51,20 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'host' => env('DB_HOST', '127.0.0.1'),
+            
+            /*'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '3306'),
             'database' => env('DB_DATABASE', 'forge'),
             'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
+            'password' => env('DB_PASSWORD', ''),*/
+
+            'host' => env('DB_HOST', $host),
+            'port' => env('DB_PORT', '3306'),
+            'database' => env('DB_DATABASE', $database),
+            'username' => env('DB_USERNAME', $username),
+            'password' => env('DB_PASSWORD', $password),
+
+
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
