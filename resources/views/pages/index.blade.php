@@ -29,7 +29,7 @@
 					
 						<form method="post" class="play-list">
 							<div class="form-group">
-								<input class="{{ $errors->has('name') ? 'form-control has-error' : 'form-control' }}" type="text" placeholder="To e.g:Hopla" name="name" value="{{ old('name') }}" >
+								<input class="{{ $errors->has('name') ? 'form-control has-error' : 'form-control' }}" type="text" placeholder="Playlist Title e.g: zone" name="name" value="{{ old('name') }}" >
 								@if($errors->has('name'))
 									<span class="err">{{ $errors->first('name') }}</span>
 								@endif
