@@ -7,7 +7,7 @@
 	<meta name="keywords" content=""/>
     <meta name="description" content=""/>
     <link rel="stylesheet" href="{{asset('css/styles.css',true)}}" type="text/css">
-    <link rel="stylesheet" href="{{asset('css/app.css'), true}}" type="text/css">
+    <link rel="stylesheet" href="{{asset('css/app.css',true)}}" type="text/css">
     
 
 </head>
