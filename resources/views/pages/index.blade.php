@@ -47,7 +47,7 @@
 							</div>
 
 							<div class="form-group">
-								<input class="{{ $errors->has('link') ? 'form-control has-error' : 'form-control' }}" type="text" placeholder="To e.g:example@yahoo.org" name="link" value="{{ old('link') }}" >
+								<input class="{{ $errors->has('link') ? 'form-control has-error' : 'form-control' }}" type="text" placeholder="Playlist URL" name="link" value="{{ old('link') }}" >
 								@if($errors->has('link'))
 									<span class="err">{{ $errors->first('link') }}</span>
 								@endif
